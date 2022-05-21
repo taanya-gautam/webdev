@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>sayHello</button>
+    <script>
+        // q.on clicking the button append hellow to the page
+        let btn = document.querySelector("button");
+        btn.addEventListener("click",function(e) {
+            let divElement =document.createElement("div");
+            divElement.innerText ="Hellow!";
+            let body=document.querySelector("body");
+            body.append(divElement)
+
+        })
+    </script>
+    
+</body>
+</html>
