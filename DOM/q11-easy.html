@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dOCUMENT</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        td,th {
+            border: 1px solid black;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>DATABASE</h1>>
+    <table>
+        <thead>
+           <tr>
+              <th>s no</th>
+              <th>name</th>
+              <th>marks</th>
+          </tr>
+        </thead>
+      <tbody>
+        
+         <tr>
+                <td>1.</td>
+                <td>Mohan</td>
+                <td>200</td>
+         </tr>
+         <tr>
+                <td>2.</td>
+                <td>sohan</td>
+                <td>300</td>
+         </tr>
+     </tbody>
+        
+
+    </table>
+    <form>
+        <label for="name">Name:
+            <input type="text" id="name"/>
+
+        </label>
+        <label for="marks">Marks:
+            <input type="number" id="marks"/>
+
+        </label>
+        
+            <input type="submit" value="submit"/>
+
+        
+    </form>
+    <script>
+        //Q.write a script which takes the entry from the form and add it to the table
+        let formElem = document.querySelector("form");
+        formElem.addEventListener("submit",(e) => {
+            //to prevent reload
+            e.preventDefault();
+            let name = document.querySelector("#name").value;
+            let marks = document.querySelector("#marks").value;
+            let sno = document.querySelectorAll("tbody tr").length+1;
+
+            let tr = document.querySelector("tr");
+            tr.innerHTML = `
+            <td>${sno}</td>
+            <td>${name}</td>
+            <td>${marks}</td>
+            `;
+            let tbody = document.querySelector("tbody");
+            tbody.appendChild(tr);
+        })
+    </script>
+        
+        
+    
+
+
+    
+</body>
+</html>
