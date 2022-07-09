@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.toolbox-cont {
+    height: 5rem;
+    background-color: rgb(9, 17, 20);
+    display: flex;
+    align-items: center;
+}
+.toolbox-cont > * {          
+    margin-left: 4rem;
+     border-radius:2px ;
+}
+.toolbox-priority-cont {
+    height: 3rem;
+    width: 16rem;
+    background-color:gray;
+    display: flex;
+    justify-content: space-around;
+   align-items: center;
+
+} 
+.action-btn-cont {
+    height: 3.5rem;
+    width: 8rem;
+    background-color:lightgrey;
+    display: flex;
+}
+.action-btn-cont > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    font-size: 2rem;
+}
+.color {
+    height: 1.3rem;
+    width: 2.5rem;
+    background-color: lightsalmon;
+    border-radius: 2px;
+}
+.lightpink {
+    background-color:lightpink;
+}
+.lightgreen {
+    background-color: lightgreen;
+}
+.lightblue {
+    background-color: lightblue;
+}
+.black {
+    background-color: black;
+}
+.action-btn-cont > *:hover {
+    background-color: dodgerblue;
+
+}
+.modal-cont {
+    height: 50vh;
+    width: 45vw;
+    background-color: lightseagreen;
+    position: absolute;
+    top: calc( ( 100vh - 50vh) / 2 );
+    left: calc( ( 100vw - 45vw) / 2 );
+    display: none;
+}
+.textarea-cont {
+    height: 100%;
+    width: 75%;
+    border: none;
+    outline: none;
+    background-color: lightskyblue;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+.priority-colors-cont {
+    height: 100%;
+    width: 25%;
+    background-color: lightslategrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.priority-color {
+    height: 3.5rem;
+    width: 60%;
+  
+}
+.border {
+    border: 5px solid cornsilk;
+}
+.ticket-cont {
+    height: 13rem;
+    width: 16rem;
+    background-color: linen;
+    
+}
+.ticket-color {
+    height: 1rem;
+    
+}
+.ticket-id {
+    height: 2rem;
+    padding: 0.4rem;
+   
+}
+.task-area {
+    height:calc(100% - 1rem - 2rem - 2rem) ;
+   padding: 0.4rem;
+    
+}
+.ticket-lock {
+    
+    height: 2rem;
+
+    display: flex;
+    font-size: 1.5rem;
+    padding-right: 1rem;
+    justify-content: flex-end;
+    color: maroon;
+}
+.main-cont {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 2rem;
+    justify-content: center;
+}
