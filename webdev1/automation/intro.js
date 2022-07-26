@@ -2,7 +2,12 @@ const puppeteer = require("puppeteer");
 let page;
 console.log("Before");
 // browser open
-const browserOpenPromise = puppeteer.launch({headless:false});
+const browserOpenPromise = puppeteer.launch({
+    headless:false,     // browser visible hota h
+    slowMo :true,      //slow down operations that we can see what is going on
+    defaultViewport:null,
+    args:[" --start-maximized"]           //chromium full screen pe open hota h
+});
 //const pagesArrpromise = browserOpenPromise.then(function(browser){
     //console.log("Browser opned");
     browserOpenPromise
