@@ -1,3 +1,9 @@
+//function has three method-->call() , apply() ,bind()
+//Each function has two important properties: length and prototype.
+
+//The length property determines the number of named arguments specified in the function declaration.
+//The prototype property references the actual function object.
+
 //(1) call
 // let person1 = {
 //     name :'Adam' ,
