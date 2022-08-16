@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: blue;
+        }
+        p {
+          
+            background-color: rgb(74, 139, 0);
+        }
+        #unique {
+            text-decoration: underline
+        }
+        .common {
+            background-color: darkturquoise;
+
+        }
+        .common p {
+            background-color: gold;
+        }
+        .common +div {
+            background-color: hotpink;
+        }
+        .common ~ div{
+            background-color: lavender;
+        }
+        /*attribute selector*/
+        label[for] {
+            color: lightseagreen;
+        }
+        label[for="name"] {
+            background-color: lime;
+
+        }
+        input[type]{
+            background-color: royalblue;
+        }
+
+    </style>
+</head>
+<body>
+    <!--form-->
+    <form>
+        <label for="name">Name</label>
+        <input type ="text" id="name">
+        <label for="pass">email</label>
+        <input type ="email" id="pass">
+        <label for="">password</label>
+        <input type ="passwoed">
+        <label for="">number</label>
+        <input type ="number">
+    </form>
+    <!--heading -->
+    <h1>welcome</h1>
+    <h2>welcome</h2>
+    <h3>welcome</h3>
+
+      <!-- para -->
+      <p> A mother is a lifelong mentor for a child whose learning stays for life. The child should turn out to be a genius is her constant desire.
+ 
+        While we may not have the same impact as her aashirwad, we are sending some love of our own, your way.
+      </p>
+     <!--anchor --> 
+     <a href ="https://www.google.com" >Go to google</a>  
+     <!--division-->
+     <div id="unique">
+         Hello
+         <p>Everyone</p>
+     </div>
+     <!--class more than one-->
+     <div class="common">Hello</div>
+     <div class="common" >Advik</div>
+     <div class="common" >God bless you!</div>
+     <div class="common">
+         <p>
+             i luv u, beta
+         </p>
+     </div>
+     
+
+
+         <!--unorderedlist(ul)-->
+         <ul>
+             <li>one</li>
+             <li>two</li>
+             <li>three</li>
+         </ul>
+         <!--orderedlist(ol)-->
+         <ol>
+         <li>one</li>
+         <li>two</li>
+         <li>three</li>
+         </ol>
+
+         <!--content filling-->
+         <span>
+            content filling
+         </span>
+
+         <!--image tag-->
+         <img src="" alt="some img">
+
+         
+
+    
+</body>
+</html>
